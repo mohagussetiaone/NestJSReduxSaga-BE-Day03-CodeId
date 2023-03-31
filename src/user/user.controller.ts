@@ -25,6 +25,13 @@ export class UserController {
   @UseGuards(AuthGuard('jwt'))
   @Get('/profile')
   public async getProfile(@Request() req) {
-    return req.user;
+    const { orderDetails, ...result } = req.user;
+    return result;
+  }
+  @UseGuards(AuthGuard('jwt'))
+  @Get('/order')
+  public async getOrder(@Request() req) {
+    const { username, password, ...result } = req.user;
+    return result;
   }
 }

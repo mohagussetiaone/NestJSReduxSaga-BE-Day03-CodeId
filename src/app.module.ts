@@ -1,8 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ModuleModule } from './module/module.module';
-import { RegionController } from './region/region.controller';
-import { RegionService } from './region/region.service';
 
 @Module({
   imports: [
@@ -11,13 +9,15 @@ import { RegionService } from './region/region.service';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'admin',
-      database: 'HR',
+      password: 'A6u5I5NeX',
+      database: 'nestjs',
       entities: ['dist/output/entities/*.js'],
       synchronize: false,
       autoLoadEntities: true,
     }),
     ModuleModule,
   ],
+  providers: [],
+  controllers: [],
 })
 export class AppModule {}
