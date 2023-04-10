@@ -62,8 +62,8 @@ export class CustomerService {
 
   public async deleteCustomer(id: number) {
     try {
-      const region = await this.serviceRepo.delete(id);
-      return region;
+      const customer = await this.serviceRepo.delete(id);
+      return customer;
     } catch (error) {
       return error.message;
     }

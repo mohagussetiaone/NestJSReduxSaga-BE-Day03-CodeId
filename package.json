@@ -6,7 +6,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "db": "typeorm-model-generator -h localhost -d nestjs -p 5432 -u postgres -x A6u5I5NeX -e postgres",
+    "db": "typeorm-model-generator -h localhost -d nestjs -p 5432 -u postgres -x admin -e postgres",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",

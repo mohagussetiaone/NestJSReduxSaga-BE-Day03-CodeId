@@ -9,7 +9,7 @@ import { ModuleModule } from './module/module.module';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'A6u5I5NeX',
+      password: 'admin',
       database: 'nestjs',
       entities: ['dist/output/entities/*.js'],
       synchronize: false,
